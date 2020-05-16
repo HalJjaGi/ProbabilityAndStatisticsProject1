@@ -1,0 +1,49 @@
+<!DOCTYPE  html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://unpkg.com/konva@2.4.2/konva.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+    <h1 id="title">202011350 이지원 Probability and Statics : Project 1 (f), (g)</h1>
+
+    <div class="total wrapper">
+    <div class="top wrapper">
+
+        <div id="container"></div>
+
+        <div id="right">
+
+            <div class="form">
+                <p>양의 정수만 입력해 주세요</p>
+                <input type="number" id="num" onkeypress="if (window.event.keyCode == 13) { trial(); }">
+                <button onclick="trial()">시행</button>
+            </div>    
+
+            <div id="counter">
+                <p class="p-1">원 안의 점 : 0개</p>
+                <p class="p-2">원 밖의 점 : 0개</p>
+            </div>
+
+            <div class="result"></div>
+        </div>
+        
+    </div>
+    
+    <div class="bottom wrapper">
+        <div id="chart"></div>
+        <div>
+            <button id="graph" onclick="drawGraph()">그래프 그리기</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="app.js"></script>
+
+
+</html>
